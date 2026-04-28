@@ -1,9 +1,33 @@
-📌 Introduction
+ SafeSphere
 
-SafeSphere is an AI-powered crowd monitoring system built using computer vision techniques to detect, track, and analyze people in real time. The system processes video input from CCTV cameras, webcams, or uploaded footage to estimate crowd density and identify overcrowding situations. By leveraging deep learning models like YOLOv8 along with OpenCV-based processing, SafeSphere provides accurate, real-time insights and intelligent alerting mechanisms. It is designed to operate in both offline and online environments, making it portable, scalable, and easily deployable across different systems and surveillance infrastructures.
+This is an AI-powered crowd monitoring system built using computer vision. It detects, tracks, and analyzes people in real time to identify overcrowding situations and provide live visual insights.It works offline also .
 
-⚠️ Problem Statement
+ 
+ Getting Started
 
-Overcrowding in public spaces such as malls, events, transportation hubs, and campuses can lead to serious safety risks, including accidents, stampedes, and delayed emergency response. Existing surveillance systems primarily rely on manual monitoring and lack automated, real-time analysis and early warning capabilities. This makes it difficult for authorities to detect critical situations in time and take preventive action.
+First, install the required dependencies:
 
-SafeSphere addresses this challenge by providing an AI-driven solution that continuously monitors crowd density, applies adaptive thresholding based on environmental conditions, and generates instant alerts when unsafe levels are detected, enabling proactive decision-making and improved public safety.
+pip install ultralytics opencv-python streamlit numpy
+
+Run the Application:
+
+streamlit run streamlit_app.py
+
+ Usage:
+
+* Choose input source:
+
+  * Webcam (real-time monitoring)
+  * Upload Video (MP4/AVI)
+
+* Click Start Monitoring
+
+The system will:
+
+* Detect people in the frame
+* Count number of individuals
+* Track unique people
+* Display heatmap of movement
+* Show alerts when crowd exceeds threshold
+
+
