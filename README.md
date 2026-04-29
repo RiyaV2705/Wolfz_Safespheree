@@ -1,33 +1,5 @@
- SafeSphere
+SafeSphere is an AI-powered crowd monitoring system that uses computer vision to detect, count, and analyze people in real time from CCTV feeds, webcams, or uploaded videos. It identifies overcrowding situations, generates instant alerts with sound and visual warnings, and provides live insights through an interactive dashboard. The system supports both offline and online modes, making it portable, scalable, and easy to deploy across different environments and integrate with existing surveillance systems.
 
-This is an AI-powered crowd monitoring system built using computer vision. It detects, tracks, and analyzes people in real time to identify overcrowding situations and provide live visual insights.It works offline also .
+Overcrowding in public spaces such as malls, events, campuses, and transportation hubs can lead to serious safety risks, including accidents and delayed emergency response. Traditional surveillance systems rely on manual monitoring and lack real-time intelligence and early warning mechanisms. SafeSphere addresses this challenge by continuously monitoring crowd density, applying adaptive thresholds based on area and conditions, and triggering alerts when unsafe levels are detected, enabling proactive decision-making and improved public safety.
 
- 
- Getting Started
-
-First, install the required dependencies:
-
-pip install ultralytics opencv-python streamlit numpy
-
-Run the Application:
-
-streamlit run streamlit_app.py
-
- Usage:
-
-* Choose input source:
-
-  * Webcam (real-time monitoring)
-  * Upload Video (MP4/AVI)
-
-* Click Start Monitoring
-
-The system will:
-
-* Detect people in the frame
-* Count number of individuals
-* Track unique people
-* Display heatmap of movement
-* Show alerts when crowd exceeds threshold
-
-
+The system offers real-time human detection, people counting, crowd density classification (Safe / Moderate / Dangerous), movement tracking, and heatmap visualization. It is designed with a modular architecture, allowing easy sharing across systems and flexible deployment, while maintaining efficient performance even in offline environments.
